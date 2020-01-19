@@ -8,3 +8,22 @@
     border-radius: 2px;
     border: none;
 }
+
+
+@media screen and (min-width:400px){
+.hide-desktop{
+    display: none;
+}
+
+}
+
+@media screen and (max-width:399px){
+    .hide-mobile{
+        display: none;
+    }
+    
+}
+
+.hide-desktop{
+
+}
