@@ -10,20 +10,3 @@
 }
 
 
-@media screen and (min-width:400px){
-.hide-desktop{
-    @include for-large-up {
-        display: none;
-    }
-}
-
-}
-
-.hide-mobile {
-        @include for-large-down{
-            display: none;
-        }
-}
-    
-
-
