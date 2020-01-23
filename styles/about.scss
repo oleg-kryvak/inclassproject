@@ -4,6 +4,7 @@
     background-color: #F4F5F7;
 
     @include for-large-up {
+        width: 1400px;
         display: flex;
         justify-content: space-between;
         padding: 77px 130px 76px 130px;
