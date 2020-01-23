@@ -1,44 +1,41 @@
 @import 'breakpoint.scss';
-@import 'common.scss';
-@import 'about.scss';
-@import 'customers.scss';
-@import 'features.scss';
-@import 'footer.scss';
 @import 'header.scss';
 @import 'headline.scss';
+@import 'about.scss';
+@import 'features.scss';
 @import 'tips.scss';
+@import 'common.scss';
+@import 'customers.scss';
 @import 'inbox.scss';
 @import 'comunication.scss';
 @import 'audience.scss';
 @import 'feedback.scss';
 @import 'hiring.scss';
 @import 'order.scss';
-body{
-    font-family: 'Work Sans';
-}
-html{
-    font-size: 16px;
-    font-family: 'Work Sans', sans-serif;
-    color: #2B292D;
+@import 'footer.scss';
 
-}
-.page{
-    width: 100%;
-    overflow-x: hidden;
+
+* {
+	box-sizing: border-box;
 }
 
-@media screen and (min-width:400px){
-    .page{
-        width: 1400px;
-        margin: auto;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-    }
+html {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 16px;
+	color: #2b292d;
 }
 
+.page {
+	width: 100%;
+	overflow-x: hidden;
+}
 
-
-
-
-
+	.page {
+		@include for-large-up {
+		max-width: 1400px;
+		margin: 0 auto;
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+	}
+}
